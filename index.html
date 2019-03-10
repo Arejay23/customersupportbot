@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Career Counselling
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" type="text/css" href="styling.css">
+</head>
+
+<body>
+
+    <div class="container" id="customer-support">
+        <div class="panel-group" role="tablist">
+            <div class="panel panel-default">
+                <div class="panel-heading border border-bottom-0" data-toggle="collapse" href="#chatbox">
+                    <h1 class="heading">Customer Support Chat Box</h1>
+                </div>
+                <div class="panel-collapse collapse" id="chatbox">
+                    <div class="modal fade" role="dialog" aria-labelledby="mysmallmodallablled">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <input id="name" class="form-control" type="text" placeholder="Type Message here...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid" style="padding-left: 2px;
+                    padding-right: 2px;">
+                        <div class="row">
+                            <div class="col-12" id="output"></div>
+                            <div class="col-12" id="typing" style="padding: 5px;"></div>
+                        </div>
+                        <div class="row">
+                            <input id="handle" class="form-control" placeholder="Handle">
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                                <input id="message" class="form-control" type="text" placeholder="Type Message here...">
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-info" id="submit">SEND</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="div1">
+        <header>
+            <h1>Career Counselling</h1>
+        </header>
+    </div>
+
+    <div id="header">
+        <a href="science.html">ScienceSection</a>
+        <a href="commerce.html">CommerceSection</a>
+        <a href="arts.html">ArtsSection</a>
+    </div>
+
+    <div id="text">
+        <p>A <strong><span id="abc">Career</strong></span> is an individual's journey through learning, work and other
+            aspects of life.Career is a very important aspect of anyone's life. Choosing a career in a certain stream
+            defines the future of a student. However, it is difficult for a student to choose a career path at the
+            early age. </p>
+        <p><span id="bold">Wondering Why to do counseling?</span><br>
+            <p>The world of work is changing all the time and fast. Jobs have emerged that didn't exist five or ten
+                years ago. And the idea that you'd stick with one career for your entire working life has been left in
+                the dust.</p>
+            <p>Choosing a career in a particular stream or profession right at the beginning has a long lasting impact
+                on a student's future. It is very important for any student to choose carefully from various options
+                available to him or her vis a vis his or her interest. In order to achieve success, one has to select
+                the path which they like to walk on. Good judgment and right kind of aptitude coupled with guidance in
+                the right direction to pick up a definite stream helps one in choosing the right career option. So from
+                the very beginning a student should be careful in making choice of their stream.</p>
+            <ul>
+                <li>Helps in determining a student's true potential</li>
+                <li>Despite having a clear idea of what they want to achieve in life, some students do not know the
+                    career path they need to follow to have the requisite academic qualification to join a particular
+                    course.</li>
+                <li>A career counselor also provides essential support and boosts the morale of a student by
+                    understanding the kind of requirements.</li>
+            </ul>
+            <p>Once people know where they are headed, they mostly become motivated to work hard to realise their
+                goals.</p>
+        </p>
+        <p class="para">What after class 10?, is the common question that arise among students after they pass out
+            class 10th board exams This is infact a more crucial and transition period for students as choosing right
+            stream in right college decides their future. However, there are numerous options available for students
+            who planning to get ahead in studies, which also promises better career prospects.</p>
+    </div>
+
+    <div id="div2">
+        <p class="para"><strong><em>Puzzeled what to do next?<br>Want to fulfill your childhood dream?<br>Here we are.
+                    This website will give you a clear idea and a clear path to fulfill your dream and deciding a
+                    suitable career for you. </em></strong></p>
+        <p class="stream"><em>There are mainly three stream offered to students after class 10 in india</em></p>
+    </div>
+
+    <p class="next" onclick="document.getElementById('demo').style.display='block'">Click to continue.</p>
+    <p id='demo' style="display:none"><strong>SCIENCE:</strong> Deals with courses in Medical sciences and Engineering.<br>
+        <a href="science.html"> Click to know more about this stream</a><br>
+        <strong>COMMERCE:</strong> Deals with courses on trade and business <br><a href="commerce.html"> Click to know
+            more about this stream</a><br>
+        <strong>ARTS:</strong> Deals with a very wide range of courses such as History, Geography, Political Science,
+        Psychology, Sociology, languages, Anthropology, Human Resources, journalism etc.
+        <br><a href="arts.html"> Click to know more about this stream</a><br><br>
+        <img src="http://www.jagranjosh.com/imported/images/E/Articles/class10.jpeg" align="middle">
+        <br>
+        <button type="button" type="button" class="btn btn-secondary" onClick="document.getElementById('demo').style.display='none'">Hide!</button>
+    </p>
+
+    <footer>
+        Contact us: <a href="mailto:rajat78711@gmail.com"><u>Contact Us</u></a>
+        <a href="mailto:vipanshijain97@gmail.cm"><u>Feedback</u></a>
+    </footer>
+
+    <div class="modal fade" id="popup" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Hello! Please enter your name...</h5>
+                </div>
+                <div class="modal-body">
+                    <p id="error"></p>
+                    <input id="user_name" class="form-control" type="text" placeholder="Enter your name here...">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="popup_submit" class="btn btn-primary" onclick="popup_func()">Submit</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/javaScript.js"></script>
+</body>
+
+</html>

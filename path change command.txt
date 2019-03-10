@@ -1,0 +1,1 @@
+$env:GOOGLE_APPLICATION_CREDENTIALS="D:\Major Project\Customer Support\customersupportbot-1df49-a6da6326ba8b.json"
